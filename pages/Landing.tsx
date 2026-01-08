@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { YoutubeLogo, InstagramLogo, TwitterLogo, LinkedinLogo, Fire, Trophy, VideoCamera, GitMerge, Brain, TrendUp, Check, GameController, FacebookLogo, Eye, HandPalm, Confetti, UserFocus } from 'phosphor-react';
+import { Fire, Trophy, VideoCamera, GitMerge, Brain, TrendUp, Check, GameController, Eye, HandPalm, Confetti, UserFocus } from 'phosphor-react';
 
 const Landing: React.FC = () => {
   return (
@@ -39,7 +39,7 @@ const Landing: React.FC = () => {
                <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0">
                   <span className="material-symbols-outlined text-4xl text-accent-primary drop-shadow-[0_2px_0_rgba(0,0,0,0.5)]">sign_language</span>
                </div>
-               <h1 className="text-2xl font-black tracking-tight text-white drop-shadow-sm font-mono">SignRight</h1>
+               <h1 className="text-2xl font-black tracking-tight text-white drop-shadow-sm font-mono">Learn2Sign</h1>
             </div>
             <div className="hidden md:flex items-center gap-4">
                <Link to="/login">
@@ -161,7 +161,7 @@ const Landing: React.FC = () => {
          <section className="py-24 relative overflow-hidden bg-app-bg">
             <div className="max-w-7xl mx-auto px-6 relative z-10">
                <div className="text-center mb-16">
-                  <h3 className="text-3xl md:text-4xl font-extrabold text-white mb-6 tracking-tight">Why <span className="text-accent-success">SignRight?</span></h3>
+                  <h3 className="text-3xl md:text-4xl font-extrabold text-white mb-6 tracking-tight">Why <span className="text-accent-success">Learn2Sign?</span></h3>
                   <p className="text-lg text-gray-400 font-medium max-w-3xl mx-auto leading-relaxed">
                       We've combined advanced AI with game design to create the most engaging way to learn American Sign Language.
                   </p>
@@ -354,7 +354,6 @@ const Landing: React.FC = () => {
                 </div>
             </div>
          </section>
-      </main>
 
       {/* Footer - Minimal */}
       <footer className="bg-app-bg py-10 border-t border-gray-800/50">
@@ -365,25 +364,28 @@ const Landing: React.FC = () => {
                  <div className="flex items-center gap-3">
                      {/* Logo Icon - using specific blue #34B1E8 */}
                      <span className="material-symbols-outlined text-3xl" style={{ color: '#34B1E8' }}>sign_language</span>
-                     <span className="text-xl font-black text-white font-mono tracking-tight">SignRight</span>
+                     <span className="text-xl font-black text-white font-mono tracking-tight">Learn2Sign</span>
                  </div>
                  
                  {/* Divider - Hidden on mobile */}
                  <div className="hidden md:block w-px h-6 bg-gray-700"></div>
                  
-                 <span className="text-gray-500 text-sm font-bold tracking-wide">© 2024 SignRight Inc.</span>
+                 <span className="text-gray-500 text-sm font-bold tracking-wide">© 2024 Learn2Sign Inc.</span>
              </div>
 
              {/* Center: Social Icons */}
-             <div className="flex items-center gap-4">
-                 <a href="#" className="w-10 h-10 rounded-xl bg-[#1F2937] hover:bg-[#2D3748] flex items-center justify-center text-gray-400 hover:text-white transition-all border border-gray-700">
-                     <FacebookLogo weight="fill" size={20} />
+             <div className="flex items-center gap-6">
+                 <a href="#" className="text-gray-400 hover:text-white transition-colors p-2 hover:bg-gray-800 rounded-lg">
+                     {/* X (Twitter) SVG */}
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256"><path d="M214.75,211.71l-62.6-98.38,61.77-67.95a8,8,0,0,0-11.84-10.76L143.24,99.34,102.75,35.71A8,8,0,0,0,96,32H48a8,8,0,0,0-6.75,12.3l62.6,98.37-61.77,68a8,8,0,1,0,11.84,10.76l58.84-64.72,40.49,63.63A8,8,0,0,0,160,224h48a8,8,0,0,0,6.75-12.29ZM164.39,208,62.57,48h29L193.43,208Z"></path></svg>
                  </a>
-                 <a href="#" className="w-10 h-10 rounded-xl bg-[#1F2937] hover:bg-[#2D3748] flex items-center justify-center text-gray-400 hover:text-white transition-all border border-gray-700">
-                     <TwitterLogo weight="fill" size={20} />
+                 <a href="#" className="text-gray-400 hover:text-white transition-colors p-2 hover:bg-gray-800 rounded-lg">
+                     {/* Github SVG */}
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256"><path d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"></path></svg>
                  </a>
-                 <a href="#" className="w-10 h-10 rounded-xl bg-[#1F2937] hover:bg-[#2D3748] flex items-center justify-center text-gray-400 hover:text-white transition-all border border-gray-700">
-                     <InstagramLogo weight="fill" size={20} />
+                 <a href="#" className="text-gray-400 hover:text-white transition-colors p-2 hover:bg-gray-800 rounded-lg" style={{ transform: 'scale(1.15)' }}>
+                     {/* Linkedin SVG */}
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256"><path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"></path></svg>
                  </a>
              </div>
 

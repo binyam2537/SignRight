@@ -101,7 +101,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ initialStep = 'auth', initialMo
             {/* Logo - No BG, Colored Icon */}
             <div className="flex items-center gap-3 relative z-10">
                <span className="material-symbols-outlined text-4xl text-accent-primary drop-shadow-sm">sign_language</span>
-               <span className="text-2xl font-black text-white tracking-tight font-mono">SignRight</span>
+               <span className="text-2xl font-black text-white tracking-tight font-mono">Learn2Sign</span>
             </div>
 
             {/* Illustration Area - Floating 3D Card */}
@@ -131,7 +131,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ initialStep = 'auth', initialMo
             </div>
 
             <div className="text-xs text-gray-600 font-medium text-center relative z-10">
-                © 2024 SignRight Inc.
+                © 2024 Learn2Sign Inc.
             </div>
           </div>
 

@@ -6,7 +6,8 @@ import Dashboard from './pages/Dashboard';
 import Learn from './pages/Learn';
 import Leaderboard from './pages/Leaderboard';
 import Profile from './pages/Profile';
-import Phrases from './pages/Phrases';
+import Dictionary from './pages/Dictionary';
+import Converse from './pages/Converse';
 import Onboarding from './pages/Onboarding';
 import Sidebar from './components/Sidebar';
 import RightPanel from './components/RightPanel';
@@ -15,7 +16,7 @@ import { UserProvider } from './contexts/UserContext';
 
 const MainLayout: React.FC = () => {
   const location = useLocation();
-  const isDojo = location.pathname === '/dojo';
+  const isDojo = location.pathname === '/dojo' || location.pathname === '/conversation';
 
   return (
     <div className="flex h-screen bg-app-bg text-ink overflow-hidden font-sans">
@@ -32,7 +33,7 @@ const MainLayout: React.FC = () => {
         </main>
       </div>
 
-      {/* 3. Right Panel (Gamification) - Hidden in Dojo to maximize space */}
+      {/* 3. Right Panel (Gamification) - Hidden in Dojo/Converse to maximize space */}
       {!isDojo && <RightPanel />}
     </div>
   );
@@ -54,9 +55,10 @@ const App: React.FC = () => {
           <Route element={<MainLayout />}>
              <Route path="/learn" element={<Learn />} />
              <Route path="/dojo" element={<Dojo />} />
+             <Route path="/conversation" element={<Converse />} />
              <Route path="/dashboard" element={<Dashboard />} />
              <Route path="/leaderboard" element={<Leaderboard />} />
-             <Route path="/phrases" element={<Phrases />} />
+             <Route path="/dictionary" element={<Dictionary />} />
              <Route path="/profile" element={<Profile />} />
           </Route>
         </Routes>
