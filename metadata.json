@@ -1,0 +1,7 @@
+{
+  "name": "SignRight",
+  "description": "A gamified, biomechanically-grouped ASL learning platform inspired by Keybr and Duolingo. Masters muscle memory through transition frequency.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
